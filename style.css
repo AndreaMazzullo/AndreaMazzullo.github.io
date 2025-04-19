@@ -1,0 +1,82 @@
+/* Reset some default spacing */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* General body styling */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+/* Header section */
+header {
+  margin-bottom: 2em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5em;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  color: #2c3e50;
+}
+
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin-top: 0.5em;
+  padding-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2c3e50;
+  border-bottom: 1px solid transparent;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #2c3e50;
+}
+
+/* Main content area */
+main {
+  margin-top: 1em;
+}
+
+/* Placeholder paragraph styling */
+main p {
+  font-size: 1.1em;
+  color: #444;
+}
+
+/* Section headings */
+main h2 {
+  margin-top: 1.5em;
+  font-size: 1.3em;
+  color: #2c3e50;
+}
+
+/* Email styling */
+.email {
+  font-style: italic;
+  color: #555;
+}
+
+/* Footer (if you want to add one later) */
+footer {
+  margin-top: 2em;
+  font-size: 0.9em;
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+}
