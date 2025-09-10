@@ -3,6 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>Andrea Mazzullo</title>
+  <style>
+      .responsive-image {
+      display: inline-block;
+      max-width: 4%; /* Default fraction on laptops/desktops */
+      height: auto;
+      }
+
+      @media (max-width: 768px) {
+      .responsive-image {
+      max-width: 8%; /* On mobile, take a fraction of screen width */
+      }
+      }
+  </style>
   <!-- <link rel="stylesheet" href="style.css"> -->
 <!--
   <style>
@@ -48,9 +61,9 @@
       </ul>
     </nav>
 
-<img src="palestine_kefiah.png" alt="Palestine" class="palestine-image" width="57.5" height="40">
-<img src="antifascist.png" alt="Antifascist" class="antifascist-image" width="42.5" height="42.5">
-<img src="palestine_kefiah.png" alt="Palestine" class="palestine-image" width="57.5" height="40">
+<img src="palestine_kefiah.png" alt="Palestine" class="responsive-image">
+<img src="antifascist.png" alt="Antifascist" class="responsive-image">
+<img src="palestine_kefiah.png" alt="Palestine" class="responsive-image">
 
 </body>
 </html>
