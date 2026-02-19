@@ -5,17 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrea Mazzullo</title>
   <style>
-      .responsive-image {
+    .responsive-image {
       display: inline-block;
       max-width: 5%; /* Default fraction on laptops/desktops */
       height: auto;
-      }
+    }
 
-      @media (max-width: 768px) {
+    @media (max-width: 768px) {
       .responsive-image {
-      max-width: 15%; /* On mobile, take a fraction of screen width */
+        max-width: 15%; /* On mobile, take a fraction of screen width */
       }
-      }
+    }
+
+    /* Style for the menu container with image */
+    .menu-container {
+      display: flex;
+      align-items: flex-end; /* Aligns items to the bottom */
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    .menu-container nav {
+      flex: 1;
+    }
+
+    .menu-image {
+      max-width: 80px; /* Adjust as needed */
+      height: auto;
+      display: block;
+      margin-bottom: 2px; /* Fine-tune vertical alignment */
+    }
+
+    /* Optional: remove default margin from the menu div */
+    .menu-container > div {
+      margin: 0;
+    }
+
+    .menu-container h3, .menu-container ul {
+      margin: 0;
+    }
+
+    .menu-container ul {
+      padding-left: 20px; /* Restore typical list indentation */
+    }
   </style>
   <!-- <link rel="stylesheet" href="style.css"> -->
 <!--
@@ -34,7 +67,6 @@
     <!-- <img src="index.png" alt="Andrea Mazzullo" class="title-image" width="350" height="65">-->
   </header>
 
-
   <main>
     <h3>Current Position</h3>
     Fixed-term researcher (Ricercatore a Tempo Determinato di Tipo A - RTDa) at the KRDB Research Centre, Faculty of Engineering, Free University of Bozen-Bolzano
@@ -51,20 +83,24 @@
     <p>andrea.mazzullo at unibz.it</p>
   </main>
 
+  <div class="menu-container">
+    <div>
+      <h3>Go to</h3>
+      <nav>
+        <ul>
+          <li><a href="curriculum.html">Curriculum Vitae</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="service.html">Academic Service</a></li>
+        </ul>
+      </nav>
+    </div>
+    <img src="tenniel_glass2.jpg" alt="EnterGlass" class="menu-image">
+  </div>
 
-<h3>Go to</h3>
-    <nav>
-      <ul>
-        <li><a href="curriculum.html">Curriculum Vitae</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="service.html">Academic Service</a></li>
-      </ul>
-    </nav>
-
-<img src="palestine_kefiah.png" alt="Palestine" class="responsive-image">
-<img src="antifascist.png" alt="Antifascist" class="responsive-image">
-<img src="palestine_kefiah.png" alt="Palestine" class="responsive-image">
+  <img src="palestine_kefiah.png" alt="Palestine" class="responsive-image" style="margin-left: 5px;">
+  <img src="antifascist.png" alt="Antifascist" class="responsive-image">
+  <img src="palestine_kefiah.png" alt="Palestine" class="responsive-image">
 
 </body>
 </html>

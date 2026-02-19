@@ -3,6 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Academic Service – Andrea Mazzullo</title>
+      <style>
+        .responsive-image {
+          display: inline-block;
+          max-width: 5%; /* Default fraction on laptops/desktops */
+          height: auto;
+        }
+
+        @media (max-width: 768px) {
+          .responsive-image {
+            max-width: 15%; /* On mobile, take a fraction of screen width */
+          }
+        }
+
+        /* Style for the menu container with image */
+        .menu-container {
+          display: flex;
+          align-items: flex-end; /* Aligns items to the bottom */
+          gap: 20px;
+          flex-wrap: wrap;
+          margin: 10px 0;
+        }
+
+        .menu-container nav {
+          flex: 1;
+        }
+
+        .menu-image {
+          max-width: 80px; /* Adjust as needed */
+          height: auto;
+          display: block;
+          margin-bottom: 2px; /* Fine-tune vertical alignment */
+        }
+
+        /* Optional: remove default margin from the menu div */
+        .menu-container > div {
+          margin: 0;
+        }
+
+        .menu-container h3, .menu-container ul {
+          margin: 0;
+        }
+
+        .menu-container ul {
+          padding-left: 20px; /* Restore typical list indentation */
+        }
+      </style>
   <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
@@ -47,6 +93,8 @@
   </ul>
 </main>
 
+<div class="menu-container">
+  <div>
 <h3>Go to</h3>
     <nav>
       <ul>
@@ -56,6 +104,9 @@
         <li><a href="teaching.html">Teaching</a></li>
       </ul>
     </nav>
+  </div>
+  <img src="tenniel_glass1.jpg" alt="EnterGlass" class="menu-image">
+</div>
 
 </body>
 </html>
